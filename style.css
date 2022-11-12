@@ -60,19 +60,39 @@ h2 {
     text-align: center;
 }
 input {
-    border-style: inset;
+    border-style:double;
+    border-color: black;
+    border-radius: 4px;
     display: block;
     margin: 0 auto;
 }
 .firstname {
     text-align: center;
     font-size: 20px;
+    padding-top: 10px;
 }
 .lastname {
     text-align: center;
     font-size: 20px;
+    padding-top: 10px;
+}
+.emailaddress {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.phonenumber {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
 }
 .submit {
     background-color: black;
     color: white;
+}
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    object-fit: contain;
 }
