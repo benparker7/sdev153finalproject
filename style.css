@@ -39,18 +39,21 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.contact {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.material-symbols-outlined {
+    float: right;
 }
-.contactimg {
-    width: 600px;
-    height: 600px;
-    object-fit: contain;
-    display: flex;
-    justify-content: space-evenly;
+
+
+.row {
+    padding: 10px;
 }
+.column {
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 170px 170px;
+    padding: 10px;
+}
+
+
 .equipment {
     display: flex;
     justify-content: space-evenly;
@@ -69,15 +72,10 @@ a:hover {
 h2 {
     font-size: 24px;
 }
+
+
 .bookappointment {
     text-align: center;
-}
-input {
-    border-style:double;
-    border-color: black;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
 }
 .firstname {
     text-align: center;
@@ -99,13 +97,33 @@ input {
     font-size: 20px;
     padding-top: 10px;
 }
+input {
+    border-style:double;
+    border-color: black;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
 .submit {
     background-color: black;
     color: white;
 }
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactimg {
+    width: 600px;
+    height: 600px;
     object-fit: contain;
+    display: flex;
+    justify-content: space-evenly;
+}
+table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 4px;
 }

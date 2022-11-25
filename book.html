@@ -16,8 +16,7 @@
 <body>
     <nav>
         <div class="container">
-        <h1><span class="bpphotography"><img style="float: left;" class="camera2" src="images/camera2.png" alt="logo">BP Photography <span class="reg">®</span></span></h1>
-        <a href="index.html">Home</a>
+        <h1><span class="bpphotography"><img style="float: left;" class="camera2" src="images/camera2.png" alt="logo"><a href="index.html">BP Photography <span class="reg">®</a></span></span></h1>        <a href="index.html">Home</a>
         <!--Showcase a few pictures with the name of the business.-->
         <a href="gallery.html">Gallery</a>
         <!--Have a ton of pictures lined up together nicely.-->
@@ -31,11 +30,11 @@
         </div>
     </nav>
     <h1 class="bookappointment">Book an appointment</h1>
-    <form action="customerdetails" method="get">
-    <div class="firstname">First name</div> <input type="text" name="first_name" id="first_name">
-    <div class="lastname">Last name</div> <input type="text" name="last_name" id="last_name">
-    <div class="emailaddress">Email address</div> <input type="text" name="email_address" id="email_address">
-    <div class="phonenumber">Phone number</div> <input type="text" name="phone_number" id="phone_number">
+    <form action="/actionpage.php">
+    <div class="firstname">First name</div> <input type="text" name="first_name" id="first_name" required>
+    <div class="lastname">Last name</div> <input type="text" name="last_name" id="last_name" required>
+    <div class="emailaddress">Email address</div> <input type="text" name="email_address" id="email_address" required>
+    <div class="phonenumber">Phone number</div> <input type="text" name="phone_number" id="phone_number" required><br>
     <input class="submit" type="submit" value="Submit">
     </form>
 </body>
