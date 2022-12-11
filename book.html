@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography website in which you can view a gallery as well as book an appointment.">
     <title>Book | BP Photography</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/camera2.png" type="image/x-icon">
@@ -12,6 +13,7 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <script src="test.js"></script>
 </head>
 <body>
     <nav>
@@ -30,12 +32,15 @@
         </div>
     </nav>
     <h1 class="bookappointment">Book an appointment</h1>
-    <form action="/actionpage.php">
-    <div class="firstname">First name</div> <input type="text" name="first_name" id="first_name" required>
-    <div class="lastname">Last name</div> <input type="text" name="last_name" id="last_name" required>
-    <div class="emailaddress">Email address</div> <input type="text" name="email_address" id="email_address" required>
-    <div class="phonenumber">Phone number</div> <input type="text" name="phone_number" id="phone_number" required><br>
-    <input class="submit" type="submit" value="Submit">
+    
+    <form name="register">
+        <div class="firstname">First name</div> <input type="text" name="first_name" id="first_name" required>
+        <div class="lastname">Last name</div> <input type="text" name="last_name" id="last_name" required>
+        <div class="emailaddress">Email address</div> <input type="text" name="email_address" id="email_address" required>
+        <div class="phonenumber">Phone number</div> <input type="text" name="phone_number" id="phone_number" required>
+        <div class="comments">Comments</div> <textarea class="textarea" name="comments" id="comments" cols="30" rows="10"></textarea><br>
+        <input class="submit" name="submit" type="submit" value="Submit" onclick="show_alert();">
     </form>
+    
 </body>
 </html>
